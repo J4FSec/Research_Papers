@@ -87,7 +87,8 @@ Host: outcome-ssp.supersonicads.com
 Connection: close
 Accept-Encoding: gzip, deflate
 
-{"userIdType":"userGenerated","userId":"demoapp","appKey":"b3495a45","connectionType":"wifi","isLimitAdTrackingEnabled":false,"gmtMinutesOffset":-240,"sessionId":"23547525-5108-492c-9636-b832af30933f","bundleId":"com.blockchainvault","mobileCarrier":"Android","jb":"true","internalFreeMemory":11295,"advertisingIdType":"GAID","appVersion":"1.30.3","sdkVersion":"7.1.1","deviceOEM":"unknown","firstSession":"true","osVersion":"24(7.0)","deviceModel":"Google Nexus 9","advertisingId":"0ce81eb8-b562-4f48-8462-10aa272399b4","language":"en","deviceOS":"Android","externalFreeMemory":11295,"battery":100,"abt":"A","groupIdRV":"1295821","is_coppa":"false","groupIdIS":"1885138","groupIdBN":"1295825","internalTestId":"{}","timestamp":1621254220016,"adUnit":3,"events":[{"provider":"Mediation","eventSessionId":"23547525-5108-492c-9636-b832af30933f","eventId":52,"timestamp":1621254219346},{"provider":"Mediation","ext1":"appLanguage=Kotlin,kiag,androidx=true","sessionDepth":1,"eventSessionId":"23547525-5108-492c-9636-b832af30933f","connectionType":"wifi","firstSessionTimestamp":1621254219352,"eventId":14,"timestamp":1621254219368}]}
+
+{"userIdType":"userGenerated","userId":"demoapp","appKey":"b3495a45","connectionType":"wifi","isLimitAdTrackingEnabled":false,"gmtMinutesOffset":-240,"sessionId":"23547525-5108-492c-9636-b832af30933f","bundleId":"com.blockchainvault","mobileCarrier":"Android","jb":"true","internalFreeMemory":11295,"advertisingIdType":"GAID","appVersion":"1.30.3","sdkVersion":"7.1.1","deviceOEM":"unknown","firstSession":"true","osVersion":"24(7.0)","deviceModel":"Google Nexus 9","advertisingId":"0ce81eb8-b562-4f48-8462-10aa272399b4","language":"en","deviceOS":"Android","externalFreeMemory":11295,"battery":100,"abt":"A","groupIdRV":"1295821","is_coppa":"false","groupIdIS":"1885138","groupIdBN":"1295825","internalTestId":"{}","timestamp":1621254220016,"adUnit":3,"events":[{"provider":"Mediation","eventSessionId":"23547525-5108-492c-9636-b832af30933f","eventId":52,"timestamp":1621254219346},{"provider":"Mediation","ext1":"appLanguage=Kotlin,kiag,androidx=true","sessionDepth":1,"eventSessionId":"23547525-5108-492c-9636-b832af30933f","connectionType":"wifi","firstSessionTimestamp":1621254219352,"eventId":14,"timestamp":1621254219368}]}
 ```
 
 As you can see, this request contains many information on the device that you install the app on such as:
@@ -122,11 +123,16 @@ And the response:
 
 ```
 HTTP/1.1 200 OK
-content-type: application/json; charset=utf-8
-status: 200 OK
-cache-control: max-age=0, private, must-revalidate
-access-control-allow-origin: https://app-cdn.minepi.com
-vary: Origin
+
+content-type: application/json; charset=utf-8
+
+status: 200 OK
+
+cache-control: max-age=0, private, must-revalidate
+
+access-control-allow-origin: https://app-cdn.minepi.com
+
+vary: Origin
 referrer-policy: strict-origin-when-cross-origin
 x-permitted-cross-domain-policies: none
 access-control-max-age: 7200
@@ -143,7 +149,8 @@ date: Mon, 17 May 2021 14:09:06 GMT
 x-powered-by: Phusion Passenger 6.0.6
 server: nginx/1.14.0 + Phusion Passenger 6.0.6
 connection: close
-Content-Length: 205
+
+Content-Length: 205
 
 {"id":182902471,"user_id":339408592,"dto":{"hash":-2128208535025350508},"created_at":"2021-05-17T14:09:05.000Z","updated_at":"2021-05-17T14:09:06.000Z","processing_completed_at":"2021-05-17T14:09:06.000Z"}
 ```
@@ -188,7 +195,8 @@ access-control-max-age: 7200
 x-xss-protection: 1; mode=block
 x-request-id: 375ff958-cac4-4d8d-ad84-1856637e9917
 access-control-allow-credentials: true
-access-control-allow-methods: GET, POST, OPTIONS, PUT, DELETEx-download-options: noopen
+access-control-allow-methods: GET, POST, OPTIONS, PUT, DELETE
+x-download-options: noopen
 etag: W/"25adc1a0835e258417663183c98fcc97"
 x-frame-options: SAMEORIGIN
 x-runtime: 0.078783
@@ -199,7 +207,8 @@ server: nginx/1.14.0 + Phusion Passenger 6.0.6
 connection: close
 Content-Length: 1395
 
-{"processed_contacts":{"created_contacts":[{"id":15388648311,"user_id":339408592,"first_name":"contact","last_name":"1","phone_record_id":"1","existing_user_id":null,"created_at":"2021-05-17T13:21:47.000Z","updated_at":"2021-05-17T13:21:47.000Z"},{"id":15388648345,"user_id":339408592,"first_name":"contact","last_name":"2","phone_record_id":"2","existing_user_id":204603621,"created_at":"2021-05-17T13:21:47.000Z","updated_at":"2021-05-17T13:25:28.000Z"},{"id":15388648367,"user_id":339408592,"first_name":"Contact","last_name":"3","phone_record_id":"3","existing_user_id":220411953,"created_at":"2021-05-17T13:21:47.000Z","updated_at":"2021-05-17T13:25:28.000Z"},{"id":15389264594,"user_id":339408592,"first_name":"contact","last_name":"4","phone_record_id":"4","existing_user_id":null,"created_at":"2021-05-17T13:34:58.000Z","updated_at":"2021-05-17T13:34:58.000Z"},{"id":15389753378,"user_id":339408592,"first_name":"contact","last_name":"5","phone_record_id":"5","existing_user_id":null,"created_at":"2021-05-17T13:45:12.000Z","updated_at":"2021-05-17T13:45:12.000Z"},{"id":15390950941,"user_id":339408592,"first_name":"Contact","last_name":"6","phone_record_id":"6","existing_user_id":null,"created_at":"2021-05-17T14:09:05.000Z","updated_at":"2021-05-17T14:09:05.000Z"}],"matching_users":[{"id":220411953,"username":"mammd123","display_name":"Mam Map","trusted":false}]},"status":"ready"}
+
+{"processed_contacts":{"created_contacts":[{"id":15388648311,"user_id":339408592,"first_name":"contact","last_name":"1","phone_record_id":"1","existing_user_id":null,"created_at":"2021-05-17T13:21:47.000Z","updated_at":"2021-05-17T13:21:47.000Z"},{"id":15388648345,"user_id":339408592,"first_name":"contact","last_name":"2","phone_record_id":"2","existing_user_id":204603621,"created_at":"2021-05-17T13:21:47.000Z","updated_at":"2021-05-17T13:25:28.000Z"},{"id":15388648367,"user_id":339408592,"first_name":"Contact","last_name":"3","phone_record_id":"3","existing_user_id":220411953,"created_at":"2021-05-17T13:21:47.000Z","updated_at":"2021-05-17T13:25:28.000Z"},{"id":15389264594,"user_id":339408592,"first_name":"contact","last_name":"4","phone_record_id":"4","existing_user_id":null,"created_at":"2021-05-17T13:34:58.000Z","updated_at":"2021-05-17T13:34:58.000Z"},{"id":15389753378,"user_id":339408592,"first_name":"contact","last_name":"5","phone_record_id":"5","existing_user_id":null,"created_at":"2021-05-17T13:45:12.000Z","updated_at":"2021-05-17T13:45:12.000Z"},{"id":15390950941,"user_id":339408592,"first_name":"Contact","last_name":"6","phone_record_id":"6","existing_user_id":null,"created_at":"2021-05-17T14:09:05.000Z","updated_at":"2021-05-17T14:09:05.000Z"}],"matching_users":[{"id":220411953,"username":"mammd123","display_name":"Mam Map","trusted":false}]},"status":"ready"}
 ```
 
 So there you have it, the answer to this section's title.
@@ -208,3 +217,6 @@ So there you have it, the answer to this section's title.
 Just to be clear, this is just our security research on Pi Network and we hope that people are aware of it's problems and ask for an explanation from it.
 
 We are ManhNho and Cu64, wear a mask, peace out.
+
+References:
+https://sputniknews.com/science/202105211082961349-cryptocurrency-mining-company-behind-vietnam-data-leaks-exposed-for-poor-cybersecurity/
