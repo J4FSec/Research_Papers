@@ -22,7 +22,7 @@ To get started with the SSL Pinning Bypass, we'll have to install Frida.
 python -m pip install Frida objection frida-tools
 ```
 
-Then prepare the injection script by saving [this](https://codeshare.frida.re/@akabe1/frida-multiple-unpinning/) script as ``sslbypass.js``ss
+Then prepare the injection script by saving [this](https://codeshare.frida.re/@akabe1/frida-multiple-unpinning/) script as ``sslbypass.js``
 
 Then download the frida-server binary your device from [here](https://github.com/frida/frida/releases/) (it's ``frida-server-14.2.18-android-x86.xz`` in my case).
 
@@ -218,5 +218,9 @@ Just to be clear, this is just our security research on Pi Network and we hope t
 
 We are ManhNho and Cu64, wear a mask, peace out.
 
-References:
-https://sputniknews.com/science/202105211082961349-cryptocurrency-mining-company-behind-vietnam-data-leaks-exposed-for-poor-cybersecurity/
+## References
+
+- https://sputniknews.com/science/202105211082961349-cryptocurrency-mining-company-behind-vietnam-data-leaks-exposed-for-poor-cybersecurity/
+- https://vnexpress.net/nguy-co-lo-danh-ba-khi-dung-pi-network-4280672.html
+- https://zingnews.vn/lo-hong-bao-mat-trong-ung-dung-pi-network-post1216705.html
+
